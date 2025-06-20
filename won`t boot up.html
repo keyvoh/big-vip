@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <style>
+    header {
+    background-color: #2E86C1;
+    color: white;
+    padding: 20px;
+   text-align: center;
+   font-display: block;
+}
+
+section {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px;
+    background-color: #28B463;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #239B56;
+}
+    body {
+      background-color: #121212;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 40px;
+    }
+
+    h1 {
+      color: #00bfff;
+    }
+
+    button {
+      background-color: #28b463;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 20px;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #1e8449;
+    }
+
+    .note-box {
+      background-color: #1c1c1c;
+      border: 1px solid #00bfff;
+      padding: 20px;
+      margin-top: 30px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 10px;
+      text-align: left;
+      display: none;
+    }
+  </style>
+<title>Computer Maintenance & Troubleshooting</title>
+</head>
+<body>
+    <header>
+        <h1><B>Computer Maintenance & Troubleshooting</B></h1>
+    </header>
+        <section id="maintenance">
+            <h2><B>PC NOT BOOT AND  IT SOLUTION</B></marquee></h2>
+     <ul>
+        <li>Keep your software updated regularly.</li>
+        <li>Clean temporary files to free up space.</li>
+        <li>Run antivirus scans to protect against malware.</li>
+        <li>Ensure proper cooling and airflow.</li>
+     </ul>
+     <h1>Computer Troubleshooting</h1>
+  <p>Click the button below to see solutions for when your PC won’t boot up:</p>
+  
+  <button onclick="showBootNote()">PC Won’t Boot Up</button>
+
+  <div class="note-box" id="bootNote">
+    <h2>💻 PC Won’t Boot Up - Possible Fixes:</h2>
+    <ul>
+      <li>🔌 Check that the power cable and power button are working.</li>
+      <li>🔋 Remove the battery (for laptops), wait a few seconds, then try again.</li>
+      <li>💾 Disconnect USB devices and external drives that may interrupt boot.</li>
+      <li>🔧 Try booting into <b>Safe Mode</b>.</li>
+      <li>🛠 Open the case and check for loose hardware components (RAM, cables).</li>
+      <li>📀 Use a bootable USB or recovery disk to troubleshoot further.</li>
+    </ul>
+    <p style="color: #00ffcc;"><strong>Note:</strong> If the issue continues, consult a technician to check for hardware failure.</p>
+  </div>
+
+  <script>
+    function showBootNote() {
+      document.getElementById("bootNote").style.display = "block";
+    }
+  </script>
+</body>
+  
+
+</html>
+     

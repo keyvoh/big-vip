@@ -1,0 +1,427 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer maintenance</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+    body {
+          background-color:rgb(0, 0, 0) ; /* Dark gray */
+          color: #ffffff;            /* White text */
+        font-family: 'Arial', sans-serif;  
+        line-height: 1.6;
+        background-color: #f50000;
+        text-align: center;
+        font-family: 'Segoe UI', sans-serif;
+        line-height: 1.6;
+        background: #f4f4f4;
+        background: linear-gradient(to bottom right, #0d3b1f, #3f1955);  /* purple to light blue */
+        color: white;
+}
+    button {
+  background-color: #00ffcc;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+    button:hover {
+             background-color: #00b38f;
+            transition: 0.8s;
+}
+
+    body {
+        background-color: rgb( blue);
+            font-family: Arial, sans-serif;
+                margin: 20px;
+                padding: 0;
+        text-align: center;
+}
+ 
+
+header {
+        background-color: #030101;
+            color: rgb(255, 255, 255);
+        padding: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}  
+button{
+    border-color: #28B463;
+     color: #2604e7;
+     background-color: #89ad98;
+}
+.gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    .logo {
+        font-size: 1.8rem;
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+    
+    nav ul {
+        display: flex;
+        list-style: none;
+    }
+    
+    nav ul li {
+        margin-left: 1.5rem;
+    }
+    
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+        transition: background-color 0.3s;
+    }
+    
+    nav ul li a:hover, nav ul li a.active {
+        background-color: #a30000;
+    }
+    
+    main {
+        padding: 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    footer {
+        background-color: #333;
+        color: white;
+        text-align: bottom;
+        padding: 1rem;
+        margin-top: 5rem;
+    }
+    
+    /* Home Page Styles */
+    .hero {
+        text-align: center;
+        padding: 3rem 0;
+        background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/race1.jpg');
+        background-size: cover;
+        background-position: center;
+        color: white;
+        border-radius: 8px;
+        margin-bottom: 2rem;
+    }
+    
+    .hero h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .hero p {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+    }
+    
+    #raceBtn {
+        background-color: #d40000;
+        color: white;
+        border: none;
+        padding: 0.8rem 2rem;
+        font-size: 1.1rem;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    #raceBtn:hover {
+        background-color: #a30000;
+    }
+    
+    .profile {
+        display: flex;
+        align-items: center;
+        margin: 2rem 0;
+        padding: 2rem;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    
+    .profile-img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: 2rem;
+        border: 5px solid #d40000;
+    }
+    
+
+    .bio h2 {
+        color: #d40000;
+        margin-bottom: 1rem;
+    }
+
+    .image-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1rem;
+    }
+    
+    .image-grid img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 8px;
+        transition: transform 0.3s;
+    }
+    
+    .image-grid img:hover {
+        transform: scale(1.03);
+    }
+    
+    /* About Page Styles */
+    .about-content {
+        background-color: white;
+        padding: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    
+    .about-content h1 {
+        color: #d40000;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    
+    .about-content article {
+        margin-bottom: 2rem;
+    }
+    
+    .about-content h2 {
+        color: #333;
+        margin-bottom: 0.5rem;
+        border-bottom: 2px solid #d40000;
+        padding-bottom: 0.5rem;
+    }
+    
+    .stats {
+        display: flex;
+        justify-content: space-around;
+        margin: 3rem 0;
+        text-align: center;
+    }
+    
+    .stat-item h3 {
+        font-size: 2.5rem;
+        color: #d40000;
+    }
+    
+    /* Contact Page Styles */
+    .contact-form {
+        background-color: white;
+        padding: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        margin-bottom: 2rem;
+    }
+    
+    .contact-form h1 {
+        color: #d40000;
+        margin-bottom: 1rem;
+    }
+    
+    .contact-form p {
+        margin-bottom: 2rem;
+    }
+    
+    .form-group {
+        margin-bottom: 1.5rem;
+    }
+    
+    .form-group label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-weight: bold;
+    }
+    
+    .form-group input,
+    .form-group textarea {
+        width: 100%;
+        padding: 0.8rem;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-family: inherit;
+    }
+    
+    .form-group textarea {
+        resize: vertical;
+    }
+    
+    button[type="submit"] {
+        background-color: #d40000;
+        color: white;
+        border: none;
+        padding: 0.8rem 2rem;
+        font-size: 1.1rem;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    
+    .contact-info {
+        background-color: white;
+        padding: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    
+    }
+    
+    .contact-info h2 {
+        color: #d40000;
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+    
+    .info-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+        text-align: center;
+    }
+    
+    .info-grid h3 {
+        color: #333;
+        margin-bottom: 0.5rem;
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 768px) {
+     header {
+            flex-direction: column;
+            text-align: center;
+        }
+       
+        nav ul {
+            margin-top: 1rem;
+            justify-content: center;
+        }
+       
+        .profile {
+            flex-direction: column;
+            text-align: center;
+        }
+       
+        .profile-img {
+            margin-right: 0;
+            margin-bottom: 1rem;
+        }
+       
+        .stats {
+            flex-direction: column;
+            gap: 2rem;
+        }
+    }
+    </style>
+</head>
+<body>
+    <header>
+    <div class="logo"><B>COMPUTER MAINTANCE</B></div>
+    <br>
+    <nav>
+        <ul>
+            <li><a href="fred.html" class="active">Home</a></li>
+            <li><a href="about.html">About html</a></li>
+            <li><a href="C:\Users\cobra\contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <section id="problems">
+            <h2 style="font-size: xx-large;"><b>Common Problems & Fixes</b></h2>
+            <p><b>Click on a problem that you Computer have  to see how to fix it:</b></p>
+            <div>
+                <h2><B>INTRODUCTION</B></h2>
+               <P><strong> Computer is a device that it must be treat in order to have Good Performance
+                and to have strong ability to do work properly</strong></P>
+             </div>
+            <p><b>The following are the problem that can occur on your pc and ways to fix them.......</b></p>
+            <div>click the button to see how their are fixed</div>
+            <a href="C:\Users\cobra\Desktop\samwel\kafuria web site.html">
+            
+            <button onclick="showSolution('slow')"><B>Slow Performance</B></button>
+            </a>
+            <br>
+            <Br>
+            <a href="C:\Users\cobra\Documents\ghosTBro\index s.html\won`t boot up.html">
+            <button onclick="showSolution('boot')"><B>Won’t Boot Up</B></button>
+            </a>
+            <div>
+            <br>
+            <a href="C:\Users\cobra\Documents\ghosTBro\index .html\network issues.html">
+            <button onclick="showSolution('network')"><B>Network Issues</B></button>
+            </a></div>
+            <a href="C:\Users\cobra\example.html">
+            <button onclick="showSolution('search')"><B>search you problem</B></button>
+            </a>
+            <hr>
+            <br>
+            <br>
+            <h2>login down here to get more information on how to fix difference problem on your Computer</h2>
+            <a href="C:\Users\cobra\hello.html">
+            <button>login in</button>
+            </a>
+            <br>
+            <br>
+            <img src="C:\Users\cobra\Documents\ghosTBro\istockphoto-2151295139-612x612.jpg" width="900" height="900">
+            <div style="position: relative; width: 300px; height: 200px;">
+        </div>
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <p id="solution"></p>
+            
+  <h1><b>The following are proper way to maintance your computer in a good way</b>
+  </h1>
+  <meta name="theme-color" content="#ffffff">
+  <div class="gallery">
+    <a href="https://www.bing.com/search?go=Search&q=video+on+how+to+maintance+in+computer&qs=ds&form=QBRE">
+    <img src="C:\Users\cobra\Documents\ghosTBro\istockphoto-2151295139-612x612.jpg" alt="Description 1"width="900" height="900">
+    </a>
+    <a href="https://www.bing.com/search?go=Search&q=video+on+how+to+maintance+in+computer&qs=ds&form=QBRE">
+    <img src="c:\Users\cobra\Documents\ghosTBro\OIP.jpg" alt="Description 2">
+    </a>
+    <a href="https://www.bing.com/search?go=Search&q=video+on+how+to+maintance+in+computer&qs=ds&form=QBRE">
+    <img src="c:\Users\cobra\Documents\ghosTBro\istockphoto-2177184306-1024x1024.jpg" alt="Description 3">
+    </a>
+    <a href="https://www.bing.com/search?go=Search&q=video+on+how+to+maintance+in+computer&qs=ds&form=QBRE">
+    <img src="C:\Users\cobra\Documents\ghosTBro\IMG-20241125-WA0034 - Copy.jpg" alt="Description 4">
+    </a>
+    <a href="https://www.bing.com/search?go=Search&q=video+on+how+to+maintance+in+computer&qs=ds&form=QBRE">
+    <img src="c:\Users\cobra\Documents\ghosTBro\OIP.jpg" alt="Description 5">
+    </a>
+  </div>
+<BR>
+<footer>
+    <p>&copy;@2025 Technology in computer</p>
+</footer>
+</body>
+</html>
